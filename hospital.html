@@ -18,20 +18,20 @@
  
   <div class="container">
   <div class="col-12">
-    <form id="form">
+    <form id="form" >
       
         
       <button type="button" class="btn btn-primary"  value="Guest" id="guest">Hospital</button>
       <br>
       <div id="onesha">
-      <input type="name" placeholder="Enter Name" id="name" size="34"autocomplete="on"  >
+      <input type="name" placeholder="Enter Name" id="name" size="34"autocomplete="on"  required>
       <br>
-      <input type="email" placeholder="Enter Email" id="email" autocomplete="on">
+      <input type="email" placeholder="Enter Email" id="email" autocomplete="on" required>
       <br>
-      <input type="password" placeholder="Enter Password" id="password" maxlength="12"  >
+      <input type="password" placeholder="Enter Password" id="password" maxlength="12"  required>
       <br>
-      <input type="submit" value="signup" id="signup">
-      <button onclick="goback()">Go back</button>
+      <button type="submit" value="signup" id="signup"id="hospital" onclick="window.location.href='timo.html'">Sign up</button>
+      <button type="button" onclick="goback()" id="back">Go back</button>
       </div>
     
 
@@ -40,10 +40,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script async src="js/script.js">
-   function goBack(){
-        window.history.back()
 
-    }
+
+  
 </script>
   </div>
 </body>
