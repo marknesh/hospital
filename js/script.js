@@ -2,8 +2,7 @@
    $(document).ready(function() { 
     $("form").submit(function() {
         event.preventDefault(); 
-        document.getElementById('form').reset()
-        
+        document.getElementById('form').reset()       
     }); 
 
     $("#guest").click(function()
