@@ -11,7 +11,7 @@
 
 <body>
 <img src="images/LOGO.png" width="500px" height="300px" id="logo">
-  <form id="regForm" action="/action_page.php">
+  <form id="regForm" action="index.html">
     <h1>REGISTER!</h1>
     
     <!-- One "tab" for each step in the form: -->
@@ -47,7 +47,7 @@
     </div>
   </form>
 
-  <script>
+  <script >
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 
@@ -83,7 +83,7 @@
       if (currentTab >= x.length) {
         // ... the form gets submitted:
         document.getElementById("regForm").submit();
-        return false;
+       return alert("Form submitted successfully");
       }
       // Otherwise, display the correct tab:
       showTab(currentTab);
@@ -120,6 +120,15 @@
       //... and adds the "active" class on the current step:
       x[n].className += " active";
     }
+
+    $("form").submit(function() {
+        event.preventDefault();
+        alert("Form submitted successfully") 
+             
+    }); 
+
+
+
   </script>
   
 </body>

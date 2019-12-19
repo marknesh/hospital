@@ -1,7 +1,7 @@
 
    $(document).ready(function() { 
     $("form").submit(function() {
-        event.preventDefault(); 
+        event.preventDefault();
         document.getElementById('form').reset()       
     }); 
 
